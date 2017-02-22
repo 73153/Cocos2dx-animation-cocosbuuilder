@@ -1,0 +1,20 @@
+//
+//  HelloCocosBuilderLayerLoader.h
+//  Demo
+//
+//  Created by Neil D on 20/05/13.
+//
+//
+#ifndef Scene17LayerLoader_h
+#define Scene17LayerLoader_h
+#include "../Scene17/Scene17Layer.h"
+/* Forward declaration. */
+class CCBReader;
+class Scene17LayerLoader : public cocos2d::extension::CCLayerLoader
+{
+    public:
+        CCB_STATIC_NEW_AUTORELEASE_OBJECT_METHOD(Scene17LayerLoader, loader);   
+    protected:
+        CCB_VIRTUAL_NEW_AUTORELEASE_CREATECCNODE_METHOD(Scene17Layer);
+};
+#endif
